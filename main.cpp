@@ -12,13 +12,10 @@ struct Restaurant {
     double waitTime;
 };
 
+Restaurant populate();
+
 int main() {
-    Restaurant r1;
-    r1.rating = 4;
-    r1.address = "123 simple st.";
-    r1.cuisine = "french";
-    r1.openStatus = false;
-    r1.waitTime = 0.0;
+    Restaurant r1 = populate();
 
     cout << r1.rating << endl;
     cout << r1.address << endl;
@@ -27,4 +24,29 @@ int main() {
     cout << r1.waitTime << endl;
 
     exit(0);
+}
+
+
+//this funciton uses user input to populate a temp restraunt struct and returns it
+Restaurant populate() {
+    Restaurant temp;
+    cout << "Please enter the restraunt rating: ";
+    cin >> temp.rating;
+    cout << "Please enter the restraunt address: ";
+    cin >> temp.address;
+    cout << "Please enter the restraunt cuisine: ";
+    cin >> temp.cuisine;
+    cout << "Please enter the restraunt open status: ";
+    cin >> temp.openStatus;
+    cout << "Please enter the restraunt wait time: ";
+    cin >> temp.waitTime;
+
+    return temp;
+}
+
+
+//this function receives a struct object as its formal param
+// and outputs the struct's data in a presentable format
+void present(Restaurant r) {
+
 }
