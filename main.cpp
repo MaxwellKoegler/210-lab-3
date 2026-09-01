@@ -13,6 +13,7 @@ struct Restaurant {
 };
 
 Restaurant populate();
+void present(Restaurant);
 
 int main() {
     Restaurant r1 = populate();
