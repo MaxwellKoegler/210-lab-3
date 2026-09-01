@@ -1,5 +1,6 @@
 // COMSC-210 | Lab 3 | Maxwell Koegler
 #include <iostream>
+
 #include <string>
 
 using namespace std;
@@ -55,5 +56,5 @@ void present(Restaurant r) {
     cout << "Restaurant address: " << r.address << endl;
     cout << "Restaurant cuisine: " << r.cuisine << endl;
     cout << "Restaurant open: " << r.openStatus << endl;
-    cout << "Restaurant wait time: "<< r.waitTime << endl;
+    cout << "Restaurant wait time: " << r.waitTime << endl;
 }
