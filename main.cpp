@@ -1,3 +1,4 @@
+// COMSC-210 | Lab 3 | Maxwell Koegler
 #include <iostream>
 #include <string>
 
@@ -25,5 +26,5 @@ int main() {
     cout << r1.openStatus << endl;
     cout << r1.waitTime << endl;
 
-
+    exit(0);
 }
